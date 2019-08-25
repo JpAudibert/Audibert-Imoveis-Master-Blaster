@@ -1,0 +1,22 @@
+{
+  "name": "audibertimoveis",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "fix": "eslint src/ --fix",
+    "dev": "nodemon src/server.js",
+    "test": "mocha src/tests/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1"
+  }
+}
