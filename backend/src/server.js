@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const { config } = require('dotenv');
 const { join } = require('path');
 const { ok } = require('assert');
@@ -15,9 +16,6 @@ config({
 
 const { NODE_PORT } = process.env;
 const { NODE_HOST } = process.env;
-
-console.log('PORT', NODE_PORT);
-console.log('HOST', NODE_HOST);
 
 app.get('/', (req, res) => {
   res.send('Hello World');

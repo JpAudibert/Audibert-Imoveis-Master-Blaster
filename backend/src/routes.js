@@ -1,4 +1,9 @@
-const express = require('express')
+const express = require('express');
 
-const routes = express.Router()
+const routes = new express.Router();
 
+const ImovelController = require('./controllers/ImovelController');
+
+routes.get('/imovels', ImovelController.index);
+
+module.exports = routes;
